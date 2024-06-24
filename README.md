@@ -1,6 +1,4 @@
-I am very new at making mods so I only made 1 joker. More coming soon I swear
-
-Edit 1: I have made 4 more jokers but added 2 sprites and I'm still relativley new. More coming soon
+9 Stupid jokers (8 of them have sprites). more coming soon just you wait
 
 Disclaimer: only works for steamodded 1.0.0
 
