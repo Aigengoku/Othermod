@@ -1,4 +1,4 @@
-9 Stupid jokers (8 of them have sprites). more coming soon just you wait
+9 Stupid jokers. more coming soon just you wait
 
 Disclaimer: only works for steamodded 1.0.0
 
