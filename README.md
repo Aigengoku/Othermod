@@ -1,4 +1,4 @@
-9 Stupid jokers, 4 dumb vouchers and 4 upgrade editions more coming soon just you wait
+9 Stupid jokers, 4 dumb vouchers and 5 editions. more coming soon just you wait
 
 Disclaimer: only works for steamodded 1.0.0
 
