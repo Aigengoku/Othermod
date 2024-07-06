@@ -1,5 +1,7 @@
 14 jokers, 4 vouchers, 4 card packs, 4 potions and 5 editions. more coming soon just you wait
 
+Credit to AlexZgreat for his consumable code otherwise potions would have never existed
+
 Potions are a new consumable type that either has a good, bad or no effect depending on rng
 
 Disclaimer: only works for steamodded 1.0.0
