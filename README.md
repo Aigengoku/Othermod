@@ -1,4 +1,4 @@
-9 Stupid jokers, 4 dumb vouchers, 4 card packs, 3 potions and 5 editions. more coming soon just you wait
+14 jokers, 4 vouchers, 4 card packs, 4 potions and 5 editions. more coming soon just you wait
 
 Potions are a new consumable type that either has a good, bad or no effect depending on rng
 
