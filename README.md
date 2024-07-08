@@ -9,6 +9,7 @@ Disclaimer: only works for steamodded 1.0.0
 The things added
 
 Jokers
+
 -red deck joker: +2 discards, -1 hand
 
 -blue deck joker: +2 hands, -1 discard
