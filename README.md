@@ -10,29 +10,29 @@ The things added
 
 Jokers
 
--red deck joker: +2 discards, -1 hand
+red deck joker: +2 discards, -1 hand
 
--blue deck joker: +2 hands, -1 discard
+blue deck joker: +2 hands, -1 discard
 
--yellow deck joker: +15$ per ante
+yellow deck joker: +15$ per ante
 
--green deck joker: +1$ intrest per hand and discard
+green deck joker: +1$ intrest per hand and discard
 
--black deck joker: +3 joker slots but -1 hand and discard
+black deck joker: +3 joker slots but -1 hand and discard
 
--painted deck joker: +3 hand size but -1 joker slot
+painted deck joker: +3 hand size but -1 joker slot
 
--torture: +1 mult per round
+torture: +1 mult per round
 
--rich gets richer: +30 mult if you have 30$ or more
+rich gets richer: +30 mult if you have 30$ or more
 
--joker?: dies
+joker?: dies
 
--gambler m: 1/10 chance to get +25 mult
+gambler m: 1/10 chance to get +25 mult
 
--gambler chip: 1/10 chance to get 66 chips
+gambler chip: 1/10 chance to get 66 chips
 
--knurples: +40 chips per hand 
+knurples: +40 chips per hand 
 
 Pack size WUMBO: pick 3 cards out of 7
 
