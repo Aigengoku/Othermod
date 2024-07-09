@@ -1,4 +1,4 @@
-14 jokers, 4 vouchers, 4 card packs, 4 potions and 5 editions. more coming soon just you wait
+14 jokers, 4 vouchers, 4 card packs, 6 potions and 5 editions. more coming soon just you wait
 
 Credit to AlexZgreat for his consumable code otherwise potions would have never existed, and apologies to Betmma for stealing some of their code
 
@@ -68,9 +68,9 @@ Voucher Vodka: 4 in 10, 3 in 10, 2 in 10 and 1 in 10 chances to get a voucher (n
 
 Backpack Brandy: 1 in 3 chance to lose a joker slot and decrease size otherwise increase both by 1
 
-????? ?????: 5 in 10 chance for a foil joker, 3 in 10 chance for a holo joker, 1.5 in 10 chance for a poylchrome joker and 0.5 in 10 chance for a negative joker
+Joker Juice: 1 in 2 chance for a foil joker, 1 in 4 chance for a holo joker, 1 in 8 chance for a poylchrome joker and 1 in 8 chance for a negative joker
 
-????? ??????: all the good effects 1/potion amount chance to get a certain effect
+Prosperity Punch: 1 in 4 chance for +1 hand and +2 discards, 1 in 4 chance for +1 joker slot and +2 hand size, 1 in 8 chance for a voucher, 1 in 8 chance for a negative jonkler
 
 MORE COMING IF REQUESTED
 
