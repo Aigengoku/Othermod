@@ -32,7 +32,13 @@ gambler m: 1/10 chance to get +25 mult
 
 gambler chip: 1/10 chance to get 66 chips
 
-knurples: +40 chips per hand 
+knurples: +40 chips per hand
+
+william: +1 handsize, +10 mult, +100 chips per boss blind 
+
+purple deck joker: +3 hands and discards
+
+chartreuse deck joker: +2$ for every remaining hand, +1$ for every remaining discard and +1$ interest (yes it's like green deck and to the moon had a baby and then divorced)
 
 Pack size WUMBO: pick 3 cards out of 7
 
