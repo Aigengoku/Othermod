@@ -42,11 +42,11 @@ SMODS.Atlas {
     py = 95
 }
 
-atlas = "v_othe_sB_129_432"
+atlas = "sb_129_432"
 
 SMODS.Atlas {
-        key = "v_othe_sB_129_432",
-        path = "sB_129_432.png",
+        key = "sb_129_432",
+        path = "sb_129_432.png",
         px = 71,
         py = 95
     }
@@ -63,7 +63,7 @@ SMODS.Atlas {
 SMODS.Voucher {
 key = 'shinier_foil',
     loc_txt = {
-      name = 'Shinier Foil',
+      name = 'shinier foil',
       text = {'Foil cards are upgraded'}
    },
    pos = {
@@ -85,7 +85,7 @@ key = 'shinier_foil',
 SMODS.Voucher {
 key = 'virtual_gold',
     loc_txt = {
-      name = 'Virtual Gold',
+      name = 'virtual gold',
       text = {'Holographic cards are upgraded'}
    },
    pos = {
@@ -106,9 +106,9 @@ end
 }
 
 SMODS.Voucher {
-key = 'sB_129_432',
+key = 'sb_129_432',
     loc_txt = {
-      name = 'SB-129 4:32',
+      name = 'sb-129 4:32',
       text = {'Polychrome cards are upgraded'}
    },
    pos = {
@@ -132,7 +132,7 @@ end
 SMODS.Voucher {
 key = 'opposite_day',
     loc_txt = {
-      name = 'Opposite Day',
+      name = 'opposite day',
       text = {'Negative cards are upgraded'}
    },
    pos = {

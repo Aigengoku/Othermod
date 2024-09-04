@@ -1,7 +1,7 @@
 -- Skeleton for creating an object
 SMODS.Booster { 
     key =  'wumbo_arcana_pack',
-    weight = 1,
+    weight = 0.3,
     loc_txt = {
         name = 'Wumbo Arcana Pack',
         text =  {'pick 3 out 7 tarot cards'}
@@ -26,7 +26,7 @@ SMODS.Booster {
 
 SMODS.Booster { 
     key =  'wumbo_celestial_pack',
-    weight = 1,
+    weight = 0.3,
     loc_txt = {
         name = 'Wumbo Celestial Pack',
         text =  {'pick 3 out 7 planet cards'}
@@ -51,7 +51,7 @@ SMODS.Booster {
 
 SMODS.Booster { 
     key =  'wumbo_spectral_pack',
-    weight = 0.5,
+    weight = 0.15,
     loc_txt = {
         name = 'Wumbo Spectral Pack',
         text =  {'pick 3 out 7 spectrals'}
@@ -77,7 +77,7 @@ SMODS.Booster {
 
 SMODS.Booster { 
     key =  'wumbo_buffoon_pack',
-    weight = 0.7,
+    weight = 0.2,
     loc_txt = {
         name = 'Wumbo Buffoon Pack',
         text =  {'pick 3 out 7 jokers'}

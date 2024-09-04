@@ -8,6 +8,7 @@
 ------------MOD CODE -------------------------
 
 -- made so that other mods in the other genre works
+-- {hehe mod comPAT} local usingprefix=SMODS.Mods and SMODS.Mods{"Name"} or false
 
 NFS.load(SMODS.current_mod.path.."Others/Othermod_Jokers.lua")()
 NFS.load(SMODS.current_mod.path.."Others/Othermod_Tarots.lua")()

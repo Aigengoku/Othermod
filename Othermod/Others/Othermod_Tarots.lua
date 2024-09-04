@@ -65,8 +65,8 @@ SMODS.ConsumableType {
 SMODS.Consumable {
     key = 'blue_and_red',
     loc_txt = {
-        name = 'Blue and Red',
-        text = {'A colorful potion that may do something handy'
+        name = 'Blue And Red',
+        text = {'#1#/#2# chance to either lose a hand and discard', 'or gain 1 of both'
         },
     },
     set = 'potion',
@@ -76,11 +76,11 @@ SMODS.Consumable {
     rate = 3,
     can_use = function() return true end,
     loc_vars = function(self, info_queue, card)
-        return {vars = {1,2,3}}
+        return {vars = {1,2}}
     end,
     use = function(self,card,area)
 
-        if pseudorandom('blue_and_red') < 1/3 then
+        if pseudorandom('blue_and_red') < 1/2 then
             G.GAME.round_resets.discards = G.GAME.round_resets.discards - 1
             G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
             ease_discard(-1)
@@ -90,7 +90,6 @@ SMODS.Consumable {
             G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
             ease_discard(1)
             ease_hands_played(1)
-        
     end
 end,
 atlas = 'blue_and_red'
@@ -247,7 +246,7 @@ SMODS.Consumable {
     rate = 2,
     can_use = function() return true end,
     loc_vars = function(self, info_queue, card)
-        return {vars = {1,2,4,8}}
+        return {vars = {1,2,4,8,16}}
     end,
     use = function(self,card,area)
         local Card_redeem_ref = Card.redeem
@@ -278,7 +277,7 @@ SMODS.Consumable {
                     randomly_create_joker(jokers_to_create,'target',localize("k_target_generate"),{edition={polychrome=true}})
                     return true
                 end}))
-            else 
+            elseif pseudorandom('joker_juice') < 1/16 then
             G.E_MANAGER:add_event(Event({
                 trigger = 'immediate',
                 delay =  0,
@@ -287,9 +286,18 @@ SMODS.Consumable {
                     randomly_create_joker(jokers_to_create,'target',localize("k_target_generate"),{edition={negative=true}})
                     return true
                 end}))
+            elseif pseudorandom('joker_juice') < 1/16 then
+            G.E_MANAGER:add_event(Event({
+                trigger = 'immediate',
+                delay =  0,
+                func = function() 
+                    local jokers_to_create = math.min(1, G.jokers.config.card_limit - (#G.jokers.cards + G.GAME.joker_buffer))
+                    randomly_create_joker(jokers_to_create,'target',localize("k_target_generate"),{edition={base=true}})
+                    return true
+                end}))
             end
         end,
-
+        
 atlas = 'joker_juice'
 }
 SMODS.Atlas {
@@ -355,6 +363,7 @@ SMODS.Atlas {
     px = 71,
     py = 95
 }
+
 
 ----------------------------------------------
 ------------MOD CODE END----------------------

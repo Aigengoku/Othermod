@@ -6,7 +6,7 @@ SMODS.Joker {
     loc_txt = {
       name = 'Red Deck Joker',
       text = {'{C:red}+2{} discards but {C:blue}-1{} hand'}
-      
+
    },
    rarity = 2,
    pos = {
@@ -41,8 +41,8 @@ SMODS.Joker {
     key = 'yellow_deck_joker',
     loc_txt = {
       name = 'Yellow Deck Joker',
-      text = {'{C:money}+15${} when anything'},
-   
+      text = {'{C:money}+15${} when you beat a boss blind'},
+
 },
    rarity = 3,
    pos = {
@@ -51,7 +51,7 @@ SMODS.Joker {
    },
    config = {
     extra = 15
-     
+
    },
    cost = 9,
    discovered = true,
@@ -65,7 +65,7 @@ SMODS.Joker {
         card.ability.extra = card.ability.extra
         ease_dollars(15)
     end
-    
+
    end,
 
 
@@ -182,7 +182,7 @@ SMODS.Atlas {
 SMODS.Joker {
     key = 'painted_deck_joker',
     loc_txt = {
-      name = ' Painted Deck Joker',
+      name = 'Painted Deck Joker',
       text = {'increases handsize by 3', 'but removes a joker slot'}
    },
    rarity = 1,
@@ -193,14 +193,15 @@ SMODS.Joker {
    cost = 3,
    discovered = true,
     add_to_deck = function(self, card, from_debuff)
-        G.hand.config.card_limit = G.hand.config.card_limit + 3 
+        G.hand.config.card_limit = G.hand.config.card_limit + 3
         G.jokers.config.card_limit = G.jokers.config.card_limit - 1
 end,
     remove_from_deck = function(self, card, from_debuff)
-        G.hand.config.card_limit = G.hand.config.card_limit - 3 
+        G.hand.config.card_limit = G.hand.config.card_limit - 3
         G.jokers.config.card_limit = G.jokers.config.caG.hand.config.card_limit + 1
 
 end,
+    
 atlas = "painted_deck_joker"
 }
 SMODS.Atlas {
@@ -214,7 +215,7 @@ SMODS.Joker {
   key = 'torture',
   loc_txt = {
       name = 'Torture',
-      text = {'{C:mult}+1{} mult per blind cleared'}
+      text = {'{C:mult}+3{} mult per blind cleared'}
   },
   rarity = 3,
   pos = {
@@ -225,7 +226,7 @@ SMODS.Joker {
   discovered = true,
   calculate = function(self, card, context)
       if context.cardarea == G.jokers and not context.before and not context.after then
-          local mult = G.GAME.round - 2
+          local mult = G.GAME.round - 4
           return {
               message = localize {
                   type = 'variable',
@@ -251,7 +252,7 @@ SMODS.Atlas {
   SMODS.Joker {
     key = 'rich_get_richer',
     loc_txt = {
-        name = 'Rich get richer',
+        name = 'Rich Get Richer',
         text = {'{C:mult}+#1#{} Mult', 'if hand is played', 'with {C:money}$30{} or more'}
 
     },
@@ -334,34 +335,34 @@ SMODS.Atlas {
     path = "joker_.png",
     px = 71,
     py = 95
-   }  
+   }
 
 SMODS.Joker {
     key = 'gambler_m',
     loc_txt = {
         name = 'Gambler M',
-        text = {'{C:green}#1#/#2#{} chance to get {C:mult} +25{}'}
+        text = {'{C:green}#1#/#2#{} chance to get {C:mult} +30{} mult'}
 
     },
 
-    rarity = 3,
+    rarity = 2,
     pos = {
         x = 0,
         y = 0
     },
     config = {
-        mult = 25,
+        mult = 30,
     },
     discovered = true,
     cost = 3,
     loc_vars = function(self, info_queue, center)
         return {
-            vars = {G.GAME.probabilities.normal*1,10, center.ability.mult}
+            vars = {G.GAME.probabilities.normal*1,8, center.ability.mult}
         }
     end,
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and not context.before and not context.after then
-        if pseudorandom ('gambler_m') < G.GAME.probabilities.normal*1/10 then
+        if pseudorandom ('gambler_m') < G.GAME.probabilities.normal*1/8 then
                 return {
                     message = localize {
                         type = 'variable',
@@ -410,7 +411,7 @@ SMODS.Joker {
                     },
                     chip_mod = card.ability.chips,
                     colour = G.C.BLUE
-                
+
             }
             end
         end
@@ -420,9 +421,9 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'knurples',
     loc_txt = {
-      name = 'knurples',
-      text = {'{C:blue}+40{} chips per {C:blue}hand'},
-   
+      name = 'Knurples',
+      text = {'{C:blue}+40{} chips per hand'},
+
 },
    rarity = 2,
    pos = {
@@ -431,7 +432,7 @@ SMODS.Joker {
    },
    config = {
     extra = 40
-     
+
    },
    cost = 9,
    discovered = true,
@@ -457,4 +458,122 @@ atlas = 'knurples'
     path = "knurples.png",
     px = 71,
     py = 95
-   }  
+   }
+
+   SMODS.Joker {
+    key = 'william',
+    loc_txt = {
+        name = 'William',
+        text = {'{C:mult}+#1#{} mult, {C:blue}+#2#{} chips', 'and {C:blue} +1 handsize per boss blind'}
+    },
+    rarity = 4,
+    pos = {
+        x = 0,
+        y = 0
+    },
+    cost = 7,
+    config = {
+        mult = 0,
+        chips = 0,
+        extra = {mult = 10, chips = 100}
+      },
+    discovered = true,
+    loc_vars = function(self, info_queue, card)
+        return {vars = {card.ability.extra.mult, card.ability.extra.chips}}
+    end,
+    calculate = function(self, card, context)
+        if context.end_of_round then
+        if not context.individual then
+        if G.GAME.blind:get_type() == 'Boss'  and not context.repetition then
+            card.ability.mult = card.ability.mult + card.ability.extra.mult
+            card.ability.chips = card.ability.chips + card.ability.extra.chips
+            G.hand:change_size(1)
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = localize('k_upgrade_ex')})
+        end
+    end
+end
+if context.joker_main then
+    return {
+        message = "William",
+        chip_mod = card.ability.chips,
+        mult_mod = card.ability.mult,
+    }
+end
+end,
+   
+  
+    atlas = "william"
+  }
+  SMODS.Atlas {
+      key = "william",
+      path = "william.png",
+      px = 71,
+      py = 95
+  }
+
+  SMODS.Joker {
+    key = 'purple_deck_joker',
+    loc_txt = {
+      name = 'Purple Deck Joker',
+      text = {'{C:red}+3{} discards and {C:blue}+3{} hands', 'A powerful combination of blue and red'}
+
+   },
+   rarity = 3,
+   pos = {
+      x = 0,
+      y = 0
+   },
+   cost = 11,
+   discovered = true,
+    add_to_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.discards = G.GAME.round_resets.discards + 3
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 3
+        ease_discard(3)
+        ease_hands_played(3)
+end,
+    remove_from_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.discards = G.GAME.round_resets.discards - 3
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 3
+        ease_discard(-3)
+        ease_hands_played(-3)
+end,
+atlas = "purple_deck_joker"
+}
+SMODS.Atlas {
+    key = "purple_deck_joker",
+    path = "purple_deck_joker.png",
+    px = 71,
+    py = 95
+}
+
+SMODS.Joker {
+    key = 'chartreuse_deck_joker',
+    loc_txt = {
+      name = 'Chartreuse Deck Joker',
+      text = {'{C:money}+2${} for every remaining hand', '{C:money}+1${} for every remaining discard', '+10 interest amount'}
+   },
+   rarity = 3,
+   pos = {
+      x = 0,
+      y = 0
+   },
+   cost = 16,
+   discovered = true,
+   add_to_deck = function(self, card, from_debuff)
+        G.GAME.modifiers.money_per_hand = 2
+        G.GAME.modifiers.money_per_discard = 1
+        G.GAME.interest_amount = G.GAME.interest_amount + 1
+end,
+   remove_from_deck = function(self, card, from_debuff)
+        G.GAME.modifiers.money_per_hand = G.GAME.modifiers.money_per_hand - 2
+        G.GAME.modifiers.money_per_discard = G.GAME.modifiers.money_per_discard - 1
+        G.GAME.interest_amount = G.GAME.interest_amount - 1
+end,
+atlas = "chartreuse_deck_joker"
+}
+SMODS.Atlas {
+    key = "chartreuse_deck_joker",
+    path = "chartreuse_deck_joker.png",
+    px = 71,
+    py = 95
+}

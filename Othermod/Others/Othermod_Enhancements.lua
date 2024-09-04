@@ -8,8 +8,8 @@
 SMODS.Edition({
     key = 'eremilium',
     loc_txt = {
-        name = 'Eremilium',
-        label = "Eremilium",
+        name = 'eremilium',
+        label = "eremilium",
         text = { 
         "{X:mult,C:white} x1.3{} mult,{C:chips} +40 {}chips and {C:mult}+7{} mult"
         }
@@ -30,8 +30,8 @@ SMODS.Shader({key = "holo2", path = "holo2.fs"})
 SMODS.Edition({
     key = 'silver_foil',
     loc_txt = {
-        name = 'Silver Foil',
-        label = "Silver Foil",
+        name = 'silver foil',
+        label = "silver foil",
         text = { 
         "{C:chips}+#1#{} chips",
         }
@@ -51,8 +51,8 @@ SMODS.Shader({key = "foil", path = "foil.fs"})
 SMODS.Edition({
     key = 'gold_holographic',
     loc_txt = {
-        name = 'Gold Holographic',
-        label = "Gold Holographic",
+        name = 'gold holographic',
+        label = "gold holographic",
         text = { 
         "{C:mult}+#1#{} mult",
         }
@@ -72,8 +72,8 @@ SMODS.Shader({key = "holo", path = "holo.fs"})
 SMODS.Edition({
     key = 'bismuth_polychrome',
     loc_txt = {
-        name = 'Bismuth Polychrome',
-        label = "Bismuth Polychrome",
+        name = 'bismuth polychrome',
+        label = "bismuth polychrome",
         text = { 
         " {X:mult,C:white}x2.5{} mult ",
          }
@@ -93,8 +93,8 @@ SMODS.Shader({key = "polychrome", path = "polychrome.fs"})
 SMODS.Edition({
     key = 'nil',
     loc_txt = {
-        name = 'Nil',
-        label = "Nil",
+        name = 'nil',
+        label = "nil",
         text = { 
         "+2 joker slots",
         }
