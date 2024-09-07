@@ -1,4 +1,4 @@
-14 jokers, 4 vouchers, 4 card packs, 6 potions and 5 editions. more coming soon just you wait
+18 jokers, 6 vouchers, 4 card packs, 6 potions and 5 editions. more coming soon just you wait
 
 Credit to AlexZgreat for his consumable code otherwise potions would have never existed, and apologies to Betmma for stealing some of their code
 
@@ -22,6 +22,14 @@ black deck joker: +3 joker slots but -1 hand and discard
 
 painted deck joker: +3 hand size but -1 joker slot
 
+zodiac deck joker: planet and tarot cards appear 2x as frequently
+
+magic deck joker: creates a fool tarot card after exiting shop
+
+anaglyph deck joker: 1 in 2 chance to create a double tag after any blind
+
+ghost deck joker: 1 in 3 chance to create a spectral card after exiting shop
+
 torture: +1 mult per round
 
 rich gets richer: +30 mult if you have 30$ or more
@@ -38,7 +46,7 @@ william: +1 handsize, +10 mult, +100 chips per boss blind
 
 purple deck joker: +3 hands and discards
 
-chartreuse deck joker: +2$ for every remaining hand, +1$ for every remaining discard and +1$ interest (yes it's like green deck and to the moon had a baby and then divorced)
+chartreuse deck joker: +2$ for every remaining hand, +1$ for every remaining discard and +5$ max interest
 
 Pack size WUMBO: pick 3 cards out of 7
 
@@ -64,19 +72,23 @@ SB-129 4:32; upgrades polychrome to bismith polychrome (needs shinier foil)
 
 Opposite Day: upgrades negative cards to Nil (needs virtual gold)
 
+Rng+: 2x chances. 1 in 10 is now 2 in 10
+
+Rng++: 2x chances. 2 in 10 is now 4 in 10
+
 Potions
 
-Blue and Red: 1 in 3 chance to lose a hand and discard otherwise gain one of both
+Blue and Red: 1 in 2 chance to lose a hand and discard otherwise gain one of both
 
-Midas mix: 2 in 5 chance to cut money in half otherwise double it
+Midas mix: 3 in 5 chance to cut money in half otherwise double it
 
-Voucher Vodka: 4 in 10, 3 in 10, 2 in 10 and 1 in 10 chances to get a voucher (not 100%)
+Voucher Vodka: 1 in 8 chance to get 3 vouchers and 1 in 15 chance to get 5
 
 Backpack Brandy: 1 in 3 chance to lose a joker slot and decrease size otherwise increase both by 1
 
-Joker Juice: 1 in 2 chance for a foil joker, 1 in 4 chance for a holo joker, 1 in 8 chance for a poylchrome joker and 1 in 8 chance for a negative joker
+Joker Juice: 1 in 2 chance for a foil joker, 1 in 4 chance for a holo joker, 1 in 8 chance for a poylchrome joker and 1 in 16 chance for either a negative or eremilium joker
 
-Prosperity Punch: 1 in 4 chance for +1 hand and +2 discards, 1 in 4 chance for +1 joker slot and +2 hand size, 1 in 8 chance for a voucher, 1 in 8 chance for a negative jonkler
+Prosperity Punch: 1 in 2 chance for +1 hand and +2 discards but -7$ , 1 in 2 chance for +1 joker slot and +2 hand size but -10$, 1 in 4 chance for 2 vouchers but -15$, 1 in 4 chance for negative jonkler but -15$
 
 MORE COMING IF REQUESTED
 
