@@ -30,15 +30,15 @@ anaglyph deck joker: 1 in 2 chance to create a double tag after any blind
 
 ghost deck joker: 1 in 3 chance to create a spectral card after exiting shop
 
-torture: +1 mult per round
+torture: +3 mult per round
 
 rich gets richer: +30 mult if you have 30$ or more
 
-joker?: dies
+joker?: 4x mult... 1 in 50 chance for your game to crash at end of a boss blind (yes i did it on purpose)
 
-gambler m: 1/10 chance to get +25 mult
+gambler m: 1/10 chance to get +20 mult
 
-gambler chip: 1/10 chance to get 66 chips
+gambler chip: 1/15 chance to get 777 chips
 
 knurples: +40 chips per hand
 
